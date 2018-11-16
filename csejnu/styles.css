@@ -1,0 +1,90 @@
+/*global veriable*/
+section {
+  margin: 2% 0% 10% 0%;
+}
+.my-section-header {
+  color: black;
+  text-align: center;
+}
+
+.my-section-subheader {
+}
+
+.more-btn {
+  background-color: #c00;
+  color: white;
+  width: 280px;
+  text-transform: none !important;
+  transition: all 1s ease;
+}
+
+.more-btn:hover {
+  background-color: #820000;
+}
+
+/*achivement by sadman*/
+
+.back-achivement {
+  background-image: url("res/ach.svg");
+  background-repeat: no-repeat;
+}
+
+.ach-description {
+  /*after color comb*/
+}
+
+.our-inspiring {
+  /*after color comb*/
+}
+
+.people {
+  /*after color comb*/
+}
+
+/*reserch by sadman*/
+
+@media (max-width: 768px) {
+  .research-img {
+    display: none;
+  }
+}
+
+.research-img {
+  overflow: hidden;
+}
+
+.research-img img {
+  transition: all 1s ease;
+}
+
+.research-card a {
+  transition: all 0.2s ease;
+}
+
+.research-card {
+  box-shadow: 0 0 20px rgba(33, 33, 33, 0.2);
+  transition: all 0.5s ease;
+  width: 90%;
+}
+
+.research-card > div > h5 {
+  font-size: 80%;
+  font-weight: bold;
+  color: #820000;
+}
+
+.research-card:hover {
+  box-shadow: 0 0 100px rgba(33, 33, 33, 0.2);
+}
+
+.research-card:hover img {
+  transform: scale(1.08);
+}
+
+.research-link {
+  color: #000;
+  font-weight: bold;
+}
+.research-link:hover {
+  color: #0b6cad;
+}

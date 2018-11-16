@@ -1,0 +1,247 @@
+/*global veriable*/
+
+.my-section-header {
+  color: black;
+  font-weight: bolder;
+  text-align: center;
+}
+
+.my-section-subheader {
+}
+
+.more-btn {
+  background-color: #c00;
+  color: white;
+  width: 280px;
+  text-transform: none !important;
+  transition: all 1s ease;
+}
+
+.more-btn:hover {
+  background-color: #820000;
+}
+
+/*achivement by sadman*/
+
+.back-achivement {
+  background-image: url("res/ach.svg");
+  background-repeat: no-repeat;
+}
+
+.ach-description {
+  /*after color comb*/
+}
+
+.our-inspiring {
+  /*after color comb*/
+}
+
+.people {
+  /*after color comb*/
+}
+
+/*reserch by sadman*/
+
+@media (max-width: 768px) {
+  .research-img {
+    display: none;
+  }
+}
+
+.research-img {
+  overflow: hidden;
+}
+
+.research-img img {
+  transition: all 1s ease;
+}
+
+.research-card a {
+  transition: all 0.2s ease;
+}
+
+.research-card {
+  box-shadow: 0 0 15px rgba(33, 33, 33, 0.2);
+  transition: all 0.5s ease;
+  width: 90%;
+}
+
+.research-card > div > h5 {
+  font-size: 72%;
+  font-weight: bold;
+  color: #820000;
+}
+
+.research-card:hover {
+  box-shadow: 0 0 25px rgba(33, 33, 33, 0.2);
+}
+
+.research-card:hover img {
+  transform: scale(1.08);
+}
+
+.research-link {
+  color: #000;
+  font-weight: bold;
+}
+.research-link:hover {
+  color: #0b6cad;
+}
+
+/*footer by sadman*/
+
+.hill {
+  background-image: url("res/hill.svg");
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  background-size: 500px 250px;
+}
+
+.hill {
+  margin-top: 5% !important;
+}
+
+.nav-footer > li > a {
+  font-size: 12px;
+  color: white;
+}
+.nav-footer > li > a :hover {
+  color: #c00 !important;
+}
+.copyright {
+  font-size: 12px;
+}
+.copyright > a {
+  color: white;
+  font-size: 12px;
+  text-decoration: none !important;
+}
+
+footer,
+.accordion {
+  background: #232020 !important;
+}
+
+.footer-panel ul > li > a {
+  text-decoration: none !important;
+  border: 5px solid transparent !important;
+  color: #ccc;
+  font-size: 15px;
+}
+
+.footer-panel ul > li > a:hover {
+  border: 5px solid transparent !important;
+  color: #c00 !important;
+}
+
+.accordion {
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none !important;
+  font-size: 15px;
+  transition: 0.5s;
+}
+
+.footer-panel {
+  padding: 0 18px;
+  max-height: 0;
+  transition: max-height 0.2s ease-out;
+}
+
+.getDirection {
+  color: #c00 !important;
+  text-decoration: none !important;
+}
+
+.getDirection :hover {
+  text-decoration: none;
+}
+
+/*reserch by sadman*/
+@media (max-width: 1050px) {
+  .neri {
+    display: none !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-panel {
+    overflow: hidden;
+  }
+  .accordion:hover {
+    color: #c00;
+  }
+  .accordion:after {
+    content: "\002B";
+    color: white;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+  }
+  .active-down:after {
+    color: white;
+    content: "\2212";
+  }
+}
+
+@media (max-width: 992px) {
+  .hill {
+    background: #232020;
+  }
+}
+
+/*social icons*/
+a.btn-social,
+.btn-social {
+  border-radius: 50%;
+  color: #ffffff !important;
+  display: inline-block;
+  height: 54px;
+  line-height: 54px;
+  margin: 8px 4px;
+  text-align: center;
+  text-decoration: none;
+  width: 54px;
+}
+
+.btn-social .fa,
+.btn-social i {
+  backface-visibility: hidden;
+  transform: scale(1);
+  transition: all 0.25s;
+}
+.btn-social:hover,
+.btn-social:focus {
+  color: #fff;
+  outline: none;
+  text-decoration: none;
+}
+
+.btn-facebook {
+  background-color: #3b5998;
+}
+.btn-facebook:hover {
+  background-color: #4c70ba;
+}
+
+.btn-youtube {
+  background-color: #e52d27;
+}
+.btn-youtube:hover {
+  background-color: #ea5955;
+}
+.btn-reddit {
+  background-color: #ff6f00;
+}
+.btn-reddit:hover {
+  background-color: #ff8f00;
+}
+.btn-twitter {
+  background-color: #55acee;
+}
+.btn-twitter:hover {
+  background-color: #83c3f3;
+}

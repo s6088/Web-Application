@@ -1,0 +1,97 @@
+
+@media (max-width: 768px) {
+  .event-img {
+    display: none;
+  }
+}
+
+.event-img {
+  overflow: hidden;
+}
+
+.event-img img {
+  transition: all 1s ease;
+}
+
+.event-card a {
+  transition: all 0.2s ease;
+}
+
+.event-card {
+  box-shadow: 0 0 15px rgba(33, 33, 33, 0.2);
+  transition: all 0.5s ease;
+  width: 100%;
+}
+
+
+
+.tag{
+  color: #820000;
+  text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1em;
+    margin-bottom: .32768em;
+}
+
+.card-body>h5 a {
+    color: #000;
+    text-decoration: none;
+    transition: color .3s ease-out;
+}
+
+.event-card:hover {
+  box-shadow: 0 0 25px rgba(33, 33, 33, 0.2);
+}
+
+.event-card:hover img {
+  transform: scale(1.08);
+}
+
+.event-link {
+  color: #000;
+  font-weight: bold;
+}
+.event-link:hover {
+  color: #0b6cad;
+}
+
+
+.date {
+    background-color: #2f2424;
+    color: #fff;
+}
+
+.date {
+    margin-left: 24px;
+}
+
+
+.date {
+    box-shadow: 0 0 10px rgba(0,0,0,.15), 0 3px 3px rgba(0,0,0,.15);
+}
+.date {
+    position: relative;
+    width: 3.8888888889em;
+    height: 3.8888888889em;
+    line-height: 1.1;
+    margin-bottom: -2.888888889em;
+    top: -1.9444444444em;
+    text-align: center;
+    padding-top: .8333333333em;
+}
+
+.date .month {
+    display: block;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: .8em;
+    margin-bottom: 0;
+    width: 100%;
+}
+ .date .day {
+    display: block;
+    font-weight: 600;
+    font-size: 1.25em;
+    margin-bottom: 0;
+    width: 100%;
+}
