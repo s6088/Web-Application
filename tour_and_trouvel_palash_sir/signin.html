@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>User Sign in</title>
+
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
+    <script src="https://cdn.firebase.com/libs/firebaseui/2.3.0/firebaseui.js"></script>
+    <!-- Import Google Icon Font -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!-- Import materialize.css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css"
+    />
+    <!-- Let browser know website is optimized for mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+    <link rel="manifest" href="manifest.json" />
+
+    <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyBsYydE2iBd1aZsPrNR0X0MRVWJ3KHYGNU",
+        authDomain: "circle-demo-b4da6.firebaseapp.com",
+        databaseURL: "https://circle-demo-b4da6.firebaseio.com",
+        projectId: "circle-demo-b4da6",
+        storageBucket: "circle-demo-b4da6.appspot.com",
+        messagingSenderId: "1000551652717"
+      };
+      firebase.initializeApp(config);
+
+      var CLIENT_ID =
+        "265939374336-cj26lol6s990fq9fp4s0ri86si3rj86n.apps.googleusercontent.com";
+    </script>
+    <script src="common.js"></script>
+    <link href="style.css" rel="stylesheet" type="text/css" media="screen" />
+    <script src="distfirebaseui.js"></script>
+    <link type="text/css" rel="stylesheet" href="distfirebaseui.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+
+  <body id="home" class="scrollspy">
+    <!-- Navbar -->
+
+    <div class="navbar-fixed">
+      <nav class="teal">
+        <div class="container">
+          <!--
+            <div class="login" style="float:right;">
+             <div style=" text-align:right;">
+                <a href="#" >Sign In</a>
+            	        |
+
+            	<a href="">Sign Up</a>
+             </div>
+            </div>
+          -->
+
+          <div class="nav-wrapper">
+            <a href="index.html" class="brand-logo">circle</a>
+            <a href="#" data-target="mobile-nav" class="sidenav-trigger">
+              <i class="material-icons">menu</i>
+            </a>
+            <!--
+              <ul class="right hide-on-med-and-down">
+              <li>
+              <a href="#search" >Search</a>
+              </li>
+              <li>
+              <a href="test.html" >Contact</a>
+              </li>
+              </ul>
+            -->
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <ul class="sidenav" id="mobile-nav">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="#search">Search</a></li>
+      <li><a href="#popular">Popular place</a></li>
+      <li><a href="#gallary">Gallary</a></li>
+      <li><a href="test.html">Contact</a></li>
+    </ul>
+
+    <!-- JavaScript at end of body for optimized loading -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+
+    <script>
+      //Sidenav
+      const sideNav = document.querySelector(".sidenav");
+      M.Sidenav.init(sideNav, {});
+    </script>
+
+    <br /><br /><br /><br /><br /><br /><br />
+    <div id="container">
+      <!-- <h3>FirebaseUI Demo</h3> -->
+      <div id="loading">Loading...</div>
+      <div id="loaded" class="hidden">
+        <div id="main">
+          <div id="user-signed-in" class="hidden">
+            <div id="user-info">
+              <div id="photo-container"><img id="photo" /></div>
+              <div id="name"></div>
+              <div id="email"></div>
+              <div id="phone"></div>
+              <div id="is-new-user"></div>
+              <div class="clearfix"></div>
+            </div>
+            <p>
+              <button id="sign-out">Sign Out</button>
+              <button id="delete-account">Delete account</button>
+            </p>
+          </div>
+          <div id="user-signed-out" class="hidden">
+            <!-- <h4>You are signed out.</h4> -->
+            <!--
+              <fieldset>
+                <legend>Configuration</legend>
+                reCAPTCHA mode for Phone Auth:
+                <label for="recaptcha-normal">
+                  <input type="radio" id="recaptcha-normal" name="recaptcha" value="normal">
+                  Normal
+                </label>
+                <label for="recaptcha-invisible">
+                  <input type="radio" id="recaptcha-invisible" name="recaptcha" value="invisible">
+                  Invisible
+                </label>
+              </fieldset>
+            -->
+            <!--
+              <p>
+                <button id="sign-in-with-redirect">Sign In with Redirect</button>
+                <button id="sign-in-with-popup">Sign In with Popup</button>
+              </p>
+            -->
+            <div id="firebaseui-spa">
+              <!-- <h5>Single Page Application mode:</h5> -->
+              <div id="firebaseui-container"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

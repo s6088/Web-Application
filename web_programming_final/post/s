@@ -1,0 +1,14 @@
+<label for="inputIsiBerita">Latitude</label>
+            <input type="text" class="form-control" required name="latitude" />
+            <label for="inputIsiBerita">Longitude</label>
+            <input type="text" class="form-control" required name="longitude" />
+            <form id="myForm">
+            <label for="inputIsiBerita">Work Title</label>
+            <input id="title" type="text" />
+            <label for="inputIsiBerita">Description</label>
+            <input id="description" type="text" />
+            <label for="inputIsiBerita">:ocation</label>
+            <input id="pac-input" /> <input id="description" type="text" />
+            <label for="inputIsiBerita">Initial Budget</label>
+            <input id="description" type="text" /> <input type="submit" />
+          </form>
