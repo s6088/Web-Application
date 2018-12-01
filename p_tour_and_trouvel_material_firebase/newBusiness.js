@@ -44,7 +44,7 @@ function errData() {
   alert("network error");
 }
 
-function getData() {}
+function getData() { }
 
 function saveMessage(resname, managername, loc, price, fditems, phone) {
   return {

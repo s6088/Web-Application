@@ -21,8 +21,11 @@
     }
 
 
-    firebase.auth().onAuthStateChanged(firebaseUser => {
-        if (firebaseUser == null) window.location.href = 'index.html';
+    firebase.auth().onAuthStateChanged(function (user) {
+        //if (firebase.auth().currentUser) {
+        if (!user) {
+            window.location.href = 'index.html';
+        }
     });
 
 

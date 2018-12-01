@@ -1,0 +1,46 @@
+   .pull-right {
+    float: right;
+}
+
+.search_page_doctor_image {
+
+    width: 100px;
+    -webkit-box-shadow: 0px -1px 17px -2px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px -1px 17px -2px rgba(0,0,0,0.75);
+    box-shadow: 0px -1px 17px -2px rgba(0,0,0,0.75);
+    height: 100px;
+}
+.pull-right {
+    float: right!important;
+}
+.img-circle {
+    border-radius: 50%;
+}
+img {
+    vertical-align: middle;
+}
+img {
+    border: 0;
+}
+
+.des{
+    font-weight: 400;
+}
+
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+hr {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    border: 0;
+    border-top: 1px solid #d7ccc8;
+}
+
+

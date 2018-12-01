@@ -1,0 +1,476 @@
+<!doctype html>
+<html >
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="login.css">
+    <link type="text/css" href="custom.css" rel="stylesheet">
+
+
+    <title>User Profile</title>
+    <link rel="icon" href="icon.png">
+
+
+
+    <!-- For Animation -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+
+
+
+    <link href="bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="bootstrap.min.js"></script>
+    <script src="jquery.min.js"></script>
+    <script src="upro.js"></script>
+     <link rel="stylesheet" href="font.css">
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css" integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
+    <link href="font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons">
+    <link rel="stylesgeet" href="material-kit.css">
+    <link rel="stylesheet" href="upro.css">
+
+
+
+
+
+
+
+</head>
+
+
+
+<body class="profile-page">
+
+
+
+
+<div class="modal fade" id="doctor">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        
+        
+        <!-- Modal body -->
+          <div class="modal-body">
+              <h1 class="text-intro">If you are a doctor then you can log in here.</h1>
+          <div class="form-div">
+              <form action="/action_page.php">
+              <div class="form-group">
+                <input type="email" class="form-control" id="email" placeholder="Phone Number">
+              </div>
+              <div class="form-group">
+    
+                <input type="password" class="form-control" id="pwd" placeholder="Password">
+              </div>
+              <div class="form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" type="checkbox"> Remember me
+                </label>
+              </div>
+              <button type="submit" class="btn btn-warning btn-block mybtn">Submit</button>
+              <center><a href="#" title="Reset Password"><small>Forgot Password ?</small></a></center>
+              <center> Not registered!!? sign up now!</center>
+          </form>
+          <form action="usu/usu.html">
+              <button type="submit" class="btn btn-dark btn-block mybtn">Sign Up</button>
+          </form>
+          </div>
+          </div>
+        
+       
+        </div>
+    </div>
+  </div>
+
+
+
+
+
+  <div class="modal fade" id="user">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        
+        
+        <!-- Modal body -->
+          <div class="modal-body">
+          <h1 class="text-intro">If you are an user then you can log in here.</h1>
+          <div class="form-div">
+              <form action="/action_page.php">
+              <div class="form-group">
+                <input type="email" class="form-control" id="email" placeholder="Phone Number">
+              </div>
+              <div class="form-group">
+    
+                <input type="password" class="form-control" id="pwd" placeholder="Password">
+              </div>
+              <div class="form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" type="checkbox"> Remember me
+                </label>
+              </div>
+              <button type="submit" class="btn btn-warning btn-block mybtn">Submit</button>
+              <center><a href="#" title="Reset Password"><small>Forgot Password ?</small></a></center>
+              <center> Not registered!!? sign up now!</center>
+          </form>
+          <form action="usu/usu.html">
+              <button type="submit" class="btn btn-dark btn-block mybtn">Sign Up</button>
+          </form>
+          </div>
+          </div>
+        
+       
+        </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+    <nav class="navbar navbar-color-on-scroll navbar-transparent    fixed-top  navbar-expand-lg "  color-on-scroll="100"  id="sectionsNav">
+        <div class="container">
+            <div class="navbar-translate">
+                <a class="navbar-brand" href="file:///C:/Users/User/Desktop/web/web.html"> <img src="logo.png" style="margin-top: -20px;"> </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                      <button class="btn btn-outline-success my-2 my-sm-0" type="submit"  data-toggle="modal" data-target="#doctor">Doctor's Sign in/up</button>
+
+                      &nbsp &nbsp &nbsp
+                    </li>
+              <li class="nav-item">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit"  data-toggle="modal" data-target="#user">User's Sign in/up</button>
+              </li>
+              &nbsp &nbsp &nbsp
+
+              <li class="nav-item">
+                <button class="btn btn-outline-success btn-sm my-2 my-sm-0" style="padding: 10px;" type="submit"  data-toggle="modal" data-target="#user">Edit</button>
+              </li>
+              
+              
+              
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    
+    <div class="page-header header-filter" data-parallax="true" style="background-image:url('b&w.png');"></div>
+    <div class="main main-raised">
+    <div class="profile-content">
+            <div class="container">
+                <div class="row">
+                  <div class="col-md-6 ml-auto mr-auto">
+                     <div class="profile">
+                          <div class="avatar">
+                              <img src="3.jpg" alt="Circle Image" class="img-raised rounded-circle img-fluid">
+                          </div>
+                          <div class="name">
+                              <h3 class="title">Sadman Ahmed </h3>
+                              <h6>User</h6>                
+                          </div>
+                      </div>
+                  </div>
+                </div>
+                <div class="description text-center">
+                    <p style="font-weight:900; ">Dhaka</p>
+                </div>
+
+
+
+
+        <div class="row">
+          <div class="col-md-6 ml-auto mr-auto">
+                        <div class="profile-tabs">
+                          <ul class="nav nav-pills nav-pills-icons justify-content-center" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#info" role="tab" data-toggle="tab">
+                                  <i class="material-icons">info</i>
+                                  Basic
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#hospital" role="tab" data-toggle="tab">
+                                  <i class="material-icons">fiber_manual_record</i>
+                                    Blood
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#chamber" role="tab" data-toggle="tab">
+                                  <i class="material-icons">local_car_wash</i>
+                                    Ambulance
+                                </a>
+                            </li>
+                          </ul>
+                        </div>
+            </div>
+            </div>
+
+
+
+
+        
+          <div class="tab-content tab-space">
+
+            <div class="tab-pane active text-center gallery" id="info">
+
+               <div class="row">
+            <div class="col-md-2">
+
+            </div>
+
+            <div class="col-md-2">
+
+            </div>
+
+            <div class="col-md-2">
+
+              <h5 >
+                Mobile :
+              </h5>
+              
+            </div>
+
+            <div class="col-md-2" style="float: left;">
+              +8801521323545
+            </div>
+
+            <div class="col-md-4">
+
+              
+            </div>
+
+
+               </div>
+
+
+               <div class="row">
+            <div class="col-md-2">
+
+            </div>
+
+            <div class="col-md-2">
+
+            </div>
+
+            <div class="col-md-2">
+
+              <h5 >
+                Email :
+              </h5>
+              
+            </div>
+
+            <div class="col-md-2" style="float: left;">
+              anonymous@gmail.com
+            </div>
+
+            <div class="col-md-4">
+
+              
+            </div>
+
+
+               </div>
+
+
+
+               <div class="row">
+            <div class="col-md-2">
+
+            </div>
+
+            <div class="col-md-2">
+
+            </div>
+
+            <div class="col-md-2">
+
+              <h5 >
+                Distric : 
+              </h5>
+              
+            </div>
+
+            <div class="col-md-2" style="float: left;">
+              Dhaka
+            </div>
+
+            <div class="col-md-4">
+
+              
+            </div>
+
+
+              </div>
+
+
+            
+            </div>
+
+
+
+
+
+
+
+
+
+            <div class="tab-pane text-center gallery" id="hospital">
+            <div class="row">
+
+              <div class="col-md-4">
+                
+              </div>
+
+              <div class="col-md-4">
+
+              <h5>
+                O+
+              </h5>
+
+              <br>
+
+              <i class="material-icons">room</i>&nbsp&nbsp&nbsp&nbsp&nbsp Dhaka. <br><br>
+
+
+
+              </div>
+
+              <div class="col-md-4">
+                
+              </div>
+
+            </div>
+
+            <div class="row">
+
+              <div class="col-md-4">
+                
+              </div>
+
+              <div class="col-md-4">
+
+              <hr>
+
+
+              </div>
+
+              <div class="col-md-4">
+                
+              </div>
+
+            </div>  
+
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+            <div class="tab-pane text-center gallery" id="chamber">
+
+
+              <div class="row">
+              
+
+                <div class="col-md-4">
+                
+                </div>
+
+                <div class="col-md-4">
+
+                  <h5>
+                    Abdul rashid
+                  </h5>
+
+                  <br>
+
+                  <i class="material-icons">room</i>&nbsp&nbsp&nbsp&nbsp&nbsp  Dhaka. <br><br>
+
+                  <i class="material-icons">phone_android</i>&nbsp&nbsp&nbsp&nbsp&nbsp +8801318521191
+
+
+
+                </div>
+
+                <div class="col-md-4">
+                
+                </div>
+
+              </div>
+
+              <div class="row">
+
+              <div class="col-md-4">
+                
+              </div>
+
+              <div class="col-md-4">
+
+              <hr>
+
+
+              </div>
+
+              <div class="col-md-4">
+                
+              </div>
+
+              </div>
+
+            
+          
+          </div>
+
+        
+            </div>
+        </div>
+  </div>
+  
+    
+    <script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js" integrity="sha384-fA23ZRQ3G/J53mElWqVJEGJzU0sTs+SvzG8fXVWP+kJQ1lwFAOkcUOysnlKJC33U" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js" integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
