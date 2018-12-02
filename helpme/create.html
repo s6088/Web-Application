@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" crossorigin="anonymous" />
+  <script src="https://www.gstatic.com/firebasejs/5.5.9/firebase.js"></script>
+
+  <title>Create Post</title>
+  <style>
+  </style>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+</head>
+
+<body style="background:#7e7e6d">
+  <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html"><img src="img/logo.png" style="height:30px; ">helpme</a>
+      <div class="collapse navbar-collapse text-center" id="collapsenavbar">
+        <ul class="navbar-nav ml-auto ">
+          <li class="navbar-item">
+            <a href="dashboard.html" class="nav-link text-white">dashboard</a>
+          </li>
+          &nbsp &nbsp
+          <li class="navbar-item">
+            <a href="posts.html" class="nav-link text-white">Search Task</a>
+          </li>
+          &nbsp &nbsp
+          <li class="navbar-item">
+            <a href="profile.html" class="nav-link text-white">Sadman Ahmed</a>
+          </li>
+          &nbsp &nbsp
+          <li class="navbar-item">
+            <a href="signup.html" class="nav-link text-white">LogOut</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container-fluid" style="margin-top:100px">
+    <h1 class="mt-4" style="text-align: center">Post a Task</h1>
+    <hr>
+    <div class="container-fluid" style=" margin-top:50px; margin-bottom: 50px;">
+      <div class="row">
+        <div id="map" class="col-lg-7" style="height:450px; margin-top: 50px"></div>
+        <div class="col-lg-1"></div>
+        <div class="col-lg-4">
+          <form id="myform">
+            <div class="form-group">
+              <label for="formGroupExampleInput">Job Title</label>
+              <input type="text" class="form-control" id="title" />
+            </div>
+            <div class="form-group">
+              <label for="exampleFormControlTextarea1">Job Description</label>
+              <textarea class="form-control" id="details" rows="3"></textarea>
+            </div>
+            <div class="form-group">
+              <label for="pac-input">Location</label>
+              <input type="text" class="form-control" id="pac-input" />
+            </div>
+            <div class="form-group">
+              <label for="formGroupExampleInput">Initial Budget</label>
+              <input type="text" class="form-control" id="base" />
+            </div>
+            <div class="form-group">
+              <label for="formGroupExampleInput">Deadline</label>
+              <input type="text" class="form-control" id="deadline" />
+            </div>
+            <button id="btnPost" class="btn btn-success">
+              post the job
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="create.js">
+
+  </script>
+
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCxOYncCMj8t4fie4Hvv5JeF-Wg5CO3-Y4&libraries=places"></script>
+
+</body>
+
+</html>

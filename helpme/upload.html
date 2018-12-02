@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>title</title>
+    <script src="https://www.gstatic.com/firebasejs/3.4.0/firebase.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" crossorigin="anonymous" />
+    <script src="https://www.gstatic.com/firebasejs/5.5.9/firebase.js"></script>
+
+    <style>
+        .top{
+            display: flex;
+            flex-direction: row;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class=""="top">
+        <input type="file" onchange="previewFile()" style="float:left;">
+        <img src="" id="preview" height="500px" width="500px" alt="Image preview..." style="float:right">
+        <button class='btn' target='previewFile'></button>
+    </div>
+
+    <p id="url"> firebase storage path URL:</p>
+</body>
+<script>
+    var config = {
+        apiKey: "AIzaSyBS3lIsr-LKg-7_hwvMneniXImHXsJd85c",
+        authDomain: "helpme-2ce8a.firebaseapp.com",
+        databaseURL: "https://helpme-2ce8a.firebaseio.com",
+        projectId: "helpme-2ce8a",
+        storageBucket: "helpme-2ce8a.appspot.com",
+        messagingSenderId: "130984454921"
+    };
+    firebase.initializeApp(config);
+    var storageRef = firebase.storage().ref();
+    var imagesRef = storageRef.child('images');
+
+
+    function previewFile() {
+        alert('ok');
+        var file = document.querySelector('input[type=file]').files[0];
+        var metadata = {
+            contentType: 'image/jpeg'
+        };
+        var uploadTask = storageRef.child('images/' + file.name).put(file, metadata);
+        uploadTask.on(firebase.storage.TaskEvent.STATE_CHANGED,
+            function (snapshot) {
+                var progress = (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
+                console.log('Upload is ' + progress + '% done');
+                switch (snapshot.state) {
+                    case firebase.storage.TaskState.PAUSED:
+                        console.log('Upload is paused');
+                        break;
+                    case firebase.storage.TaskState.RUNNING:
+                        console.log('Upload is running');
+                        break;
+                }
+            }, function (error) {
+                console.log('error while uploading')
+            }, function () {
+                var starsRef = storageRef.child('images/' + file.name);
+                starsRef.getDownloadURL().then(function (url) {
+                    document.querySelector('#preview').src = url;
+                    var t = document.querySelector('p')
+                    t.innerHTML = 'firebase storage path URL: ' + url
+                }).catch(function (error) {
+                    console.log('error while downloading file');
+                });
+            });
+    }
+</script>
+
+</html>

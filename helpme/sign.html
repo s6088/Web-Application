@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <title>Sign Up</title>
+  <link rel="icon" href="img/logo.png">
+  <script src="https://www.gstatic.com/firebasejs/5.5.9/firebase.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="https://cdn.firebase.com/libs/firebaseui/3.4.1/firebaseui.js"></script>
+  <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.4.1/firebaseui.css" />
+  <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+  <style>
+    .post_body {
+      margin-top: -58px;
+      background: url("img/signin.jpg") no-repeat center center fixed;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      height: 100%;
+    }
+  </style>
+</head>
+
+<body>
+
+
+
+  <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html"><img src="img/logo.png" style="height:30px; ">helpme</a>
+      <div class="collapse navbar-collapse text-center" id="collapsenavbar">
+        <ul class="navbar-nav ml-auto ">
+          <li class="navbar-item">
+            <a href="index.html" class="nav-link text-white">Home</a>
+          </li>
+          <li class="navbar-item">
+            <a href="posts.html" class="nav-link text-white">Search Job</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="post_body">
+    <div class="container" style=" margin-top:100px; height: 550px;">
+      <div class="row">
+        <div class="col-lg-8"></div>
+        <div class="col-lg-4" id="firebaseui-auth-container" style=" margin-top:100px;">
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer mt-5">
+      <h6 class="text-center">
+        Copyright © 2018, Designed by Birds_of_Passage
+      </h6>
+    </footer>
+  </div>
+
+  <script src="sign.js"></script>
+</body>
+
+</html>

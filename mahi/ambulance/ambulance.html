@@ -1,14 +1,15 @@
 <!doctype html>
-<html >
+<html>
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
     <link type="text/css" href="custom.css" rel="stylesheet">
     <link type="text/css" href="ambulance.css" rel="stylesheet">
-    
+    <script src="https://www.gstatic.com/firebasejs/5.6.0/firebase.js"></script>
 
     <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
@@ -31,568 +32,225 @@
 
 
     <!-- The Modal -->
-  <div class="modal fade" id="doctor">
-    <div class="modal-dialog">
-      <div class="modal-content">
-      
-        <!-- Modal Header -->
-        
-        
-        <!-- Modal body -->
-            <div class="modal-body">
-                <h1 class="text-intro">If you are an user then you can log in here.</h1>
-                <div class="form-div">
-                    <form action="/action_page.php">
-                        <div class="form-group">
-                            <input type="email" class="form-control" id="email" placeholder="Phone Number">
-                        </div>
-                        <div class="form-group">
-    
-                            <input type="password" class="form-control" id="pwd" placeholder="Password">
-                        </div>
-                        <div class="form-check">
-                            <label class="form-check-label">
-                                <input class="form-check-input" type="checkbox"> Remember me
-                            </label>
-                        </div>
-                        <button type="submit" class="btn btn-warning btn-block mybtn">Submit</button>
-                        <center><a href="#" title="Reset Password"><small>Forgot Password ?</small></a></center>
-                        <center> Not registered!!? sign up now!</center>
-                    </form>
-                    <form action="usu/usu.html">
-                        <button type="submit" class="btn btn-dark btn-block mybtn">Sign Up</button>
-                    </form>
+    <div class="modal fade" id="doctor">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <h1 class="text-intro">If you are an user then you can log in here.</h1>
+                    <div class="form-div">
+                        <form action="/action_page.php">
+                            <div class="form-group">
+                                <input type="email" class="form-control" id="email" placeholder="Phone Number">
+                            </div>
+                            <div class="form-group">
+
+                                <input type="password" class="form-control" id="pwd" placeholder="Password">
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input class="form-check-input" type="checkbox"> Remember me
+                                </label>
+                            </div>
+                            <button type="submit" class="btn btn-warning btn-block mybtn">Submit</button>
+                            <center><a href="#" title="Reset Password"><small>Forgot Password ?</small></a></center>
+                            <center> Not registered!!? sign up now!</center>
+                        </form>
+                        <form action="usu/usu.html">
+                            <button type="submit" class="btn btn-dark btn-block mybtn">Sign Up</button>
+                        </form>
+                    </div>
                 </div>
+
+
             </div>
-        
-       
         </div>
     </div>
-  </div>
 
 
 
 
 
-  <div class="modal fade" id="user">
-    <div class="modal-dialog">
-      <div class="modal-content">
-      
-        <!-- Modal Header -->
-        
-        
-        <!-- Modal body -->
-            <div class="modal-body">
-                <h1 class="text-intro">If you are an user then you can log in here.</h1>
-                <div class="form-div">
-                    <form action="/action_page.php">
-                        <div class="form-group">
-                            <input type="email" class="form-control" id="email" placeholder="Phone Number">
-                        </div>
-                        <div class="form-group">
-    
-                            <input type="password" class="form-control" id="pwd" placeholder="Password">
-                        </div>
-                        <div class="form-check">
-                            <label class="form-check-label">
-                                <input class="form-check-input" type="checkbox"> Remember me
-                            </label>
-                        </div>
-                        <button type="submit" class="btn btn-warning btn-block mybtn">Submit</button>
-                        <center><a href="#" title="Reset Password"><small>Forgot Password ?</small></a></center>
-                        <center> Not registered!!? sign up now!</center>
-                    </form>
-                    <form action="usu/usu.html">
-                        <button type="submit" class="btn btn-dark btn-block mybtn">Sign Up</button>
-                    </form>
+    <div class="modal fade" id="user">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <h1 class="text-intro">If you are an user then you can log in here.</h1>
+                    <div class="form-div">
+                        <form action="/action_page.php">
+                            <div class="form-group">
+                                <input type="email" class="form-control" id="email" placeholder="Phone Number">
+                            </div>
+                            <div class="form-group">
+
+                                <input type="password" class="form-control" id="pwd" placeholder="Password">
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input class="form-check-input" type="checkbox"> Remember me
+                                </label>
+                            </div>
+                            <button type="submit" class="btn btn-warning btn-block mybtn">Submit</button>
+                            <center><a href="#" title="Reset Password"><small>Forgot Password ?</small></a></center>
+                            <center> Not registered!!? sign up now!</center>
+                        </form>
+                        <form action="usu/usu.html">
+                            <button type="submit" class="btn btn-dark btn-block mybtn">Sign Up</button>
+                        </form>
+                    </div>
                 </div>
+
+
             </div>
-        
-       
         </div>
     </div>
-  </div>
 
 
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" >
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
 
 
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
+            aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
 
-      <a class="navbar-brand" href="file:///C:/Users/User/Desktop/web/web.html"><img src="logo.png" style="height:30px; "></a>
+        <a class="navbar-brand" href="file:///C:/Users/User/Desktop/web/web.html"><img src="logo.png" style="height:30px; "></a>
 
-      <div class="collapse navbar-collapse" id="navbarTogglerDemo03" >
-      <div class="navbar-nav mr-auto mt-2 mt-lg-0">
-      
-      </div>
-      <div class="form-inline my-2 my-lg-0">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit"  data-toggle="modal" data-target="#doctor">Doctor's Sign in/up</button>
-        &nbsp&nbsp&nbsp&nbsp
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit"  data-toggle="modal" data-target="#user">User's Sign in/up</button>
-      </div>
-      </div>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+            <div class="navbar-nav mr-auto mt-2 mt-lg-0">
+
+            </div>
+            <div class="form-inline my-2 my-lg-0">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit" data-toggle="modal" data-target="#doctor">Doctor's
+                    Sign in/up</button>
+                &nbsp&nbsp&nbsp&nbsp
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit" data-toggle="modal" data-target="#user">User's
+                    Sign in/up</button>
+            </div>
+        </div>
     </nav>
 
     <br><br><br>
 
 
-     <div class="container">
+    <div class="container">
 
         <div class="row">
 
             <div class="col-md-4">
-                
-               
+
+
 
             </div>
 
             <div class="col-md-4">
-                    
-                    <select class="form-control input-sm specialty" name="specialty">
-                      <option value="0">All District</option>
-                      <option value="1">Dhaka</option>
-                      <option value="2">Chandpur</option>
-                      <option value="3">Gaibandha</option>
-                      <option value="4">Pirozpur</option>
-                      <option value="5">Razbari</option>
-                      <option value="6">Shariatpur</option>
-                      <option value="7">Munshiganj</option>
-                      <option value="8">Narayanganj</option>
-                      
-                    </select>
+
+                <select class="form-control input-sm specialty" name="specialty">
+                    <option value="0">All District</option>
+                    <option value="1">Dhaka</option>
+                    <option value="2">Chandpur</option>
+                    <option value="3">Gaibandha</option>
+                    <option value="4">Pirozpur</option>
+                    <option value="5">Razbari</option>
+                    <option value="6">Shariatpur</option>
+                    <option value="7">Munshiganj</option>
+                    <option value="8">Narayanganj</option>
+
+                </select>
 
             </div>
 
             <div class="col-md-4">
 
                 <button type="button" class="btn btn-sm btn-outline-dark" style="margin-top: 5px;width: 80px;">GO!!</button>
-                
+
             </div>
-            
+
         </div>
-        
+
     </div>
 
 
 
 
     <section id="team" class="pb-5">
-    <div class="container">
-        <h5 class="section-title h1">Ambulance Drivers</h5>
-        <div class="row">
-            <!-- Team member -->
-            <div class="col-xs-12 col-sm-6 col-md-4">
-                <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
-                    <div class="mainflip">
-                        <div class="frontside">
-                            <div class="card">
-                                <div class="card-body text-center">
-                                    <p><img class=" img-fluid" src="1.jpg" alt="card image"></p>
-                                    <h4 class="card-title">Md Mehrab Hosen</h4>
-                                    <p class="card-text">Ambulance service</p>
-                                    <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="backside">
-                            <div class="card">
-                                <div class="card-body text-center mt-4">
-                                    <h4 class="card-title">Md Mehrab Hosen</h4>
-                                    <p class="card-text">Division : Dhaka</p>
-                                    <p class="card-text">District : Dhaka</p>
-                                    <p class="card-text">Contact No: 01521323545</p>
-                                    
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        <div class="container">
+            <h5 class="section-title h1">Ambulance Drivers</h5>
+            <div class="row" id="mydiv">
+
             </div>
-            <!-- ./Team member -->
-            <!-- Team member -->
-            <div class="col-xs-12 col-sm-6 col-md-4">
-                <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
-                    <div class="mainflip">
-                        <div class="frontside">
-                            <div class="card">
-                                <div class="card-body text-center">
-                                    <p><img class=" img-fluid" src="2.jpg" alt="card image"></p>
-                                    <h4 class="card-title">Mahbubur Rahman</h4>
-                                    <p class="card-text">Ambulance service</p>
-                                    <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="backside">
-                            <div class="card">
-                                <div class="card-body text-center mt-4">
-                                    <h4 class="card-title">Mahbubur Rahman</h4>
-                                    <p class="card-text">Division : Dhaka</p>
-                                    <p class="card-text">District : Dhaka</p>
-                                    <p class="card-text">Contact No: 01521323545</p>
-                                    
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+
+
+
+
+
+            <div class="row" style="padding-top: 10px; padding-bottom: 30px;">
+
+
+                <div class="col-md-4">
+
                 </div>
+
+                <div class="col-md-4">
+
+
+                    <div class="row">
+
+                        <div class="col-md-4">
+
+                        </div>
+
+                        <div class="col-md-4">
+                            <button type="button" class="btn btn-success">View More</button>
+
+                        </div>
+
+                        <div class="col-md-4">
+
+                        </div>
+
+                    </div>
+
+
+
+                </div>
+
+                <div class="col-md-4">
+
+                </div>
+
+
             </div>
-            <!-- ./Team member -->
-            <!-- Team member -->
-            <div class="col-xs-12 col-sm-6 col-md-4">
-                <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
-                    <div class="mainflip">
-                        <div class="frontside">
-                            <div class="card">
-                                <div class="card-body text-center">
-                                    <p><img class=" img-fluid" src="3.jpg" alt="card image"></p>
-                                    <h4 class="card-title">Sadman Ahmed</h4>
-                                    <p class="card-text">Ambulance Service</p>
-                                    <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="backside">
-                            <div class="card">
-                                <div class="card-body text-center mt-4">
-                                    <h4 class="card-title">Sadman Ahmed</h4>
-                                    <p class="card-text">Division : Bandarban</p>
-                                    <p class="card-text">District : Chattogram</p>
-                                    <p class="card-text">Contact No: 01521323545</p>
-                                    
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- ./Team member -->
-             <!-- Team member -->
-            <div class="col-xs-12 col-sm-6 col-md-4">
-                <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
-                    <div class="mainflip">
-                        <div class="frontside">
-                            <div class="card">
-                                <div class="card-body text-center">
-                                    <p><img class=" img-fluid" src="1.jpg" alt="card image"></p>
-                                    <h4 class="card-title">Md Mehrab Hosen</h4>
-                                    <p class="card-text">Ambulance service</p>
-                                    <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="backside">
-                            <div class="card">
-                                <div class="card-body text-center mt-4">
-                                    <h4 class="card-title">Md Mehrab Hosen</h4>
-                                    <p class="card-text">Division : Dhaka</p>
-                                    <p class="card-text">District : Dhaka</p>
-                                    <p class="card-text">Contact No: 01521323545</p>
-                                    
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- ./Team member -->
-            <!-- Team member -->
-            <div class="col-xs-12 col-sm-6 col-md-4">
-                <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
-                    <div class="mainflip">
-                        <div class="frontside">
-                            <div class="card">
-                                <div class="card-body text-center">
-                                    <p><img class=" img-fluid" src="2.jpg" alt="card image"></p>
-                                    <h4 class="card-title">Mahbubur Rahman</h4>
-                                    <p class="card-text">Ambulance service</p>
-                                    <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="backside">
-                            <div class="card">
-                                <div class="card-body text-center mt-4">
-                                    <h4 class="card-title">Mahbubur Rahman</h4>
-                                    <p class="card-text">Division : Dhaka</p>
-                                    <p class="card-text">District : Dhaka</p>
-                                    <p class="card-text">Contact No: 01521323545</p>
-                                    
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- ./Team member -->
-            <!-- Team member -->
-            <div class="col-xs-12 col-sm-6 col-md-4">
-                <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
-                    <div class="mainflip">
-                        <div class="frontside">
-                            <div class="card">
-                                <div class="card-body text-center">
-                                    <p><img class=" img-fluid" src="3.jpg" alt="card image"></p>
-                                    <h4 class="card-title">Sadman Ahmed</h4>
-                                    <p class="card-text">Ambulance Service</p>
-                                    <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="backside">
-                            <div class="card">
-                                <div class="card-body text-center mt-4">
-                                    <h4 class="card-title">Sadman Ahmed</h4>
-                                    <p class="card-text">Division : Bandarban</p>
-                                    <p class="card-text">District : Chattogram</p>
-                                    <p class="card-text">Contact No: 01521323545</p>
-                                    
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- ./Team member -->
-             <!-- Team member -->
-            <div class="col-xs-12 col-sm-6 col-md-4">
-                <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
-                    <div class="mainflip">
-                        <div class="frontside">
-                            <div class="card">
-                                <div class="card-body text-center">
-                                    <p><img class=" img-fluid" src="1.jpg" alt="card image"></p>
-                                    <h4 class="card-title">Md Mehrab Hosen</h4>
-                                    <p class="card-text">Ambulance service</p>
-                                    <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="backside">
-                            <div class="card">
-                                <div class="card-body text-center mt-4">
-                                    <h4 class="card-title">Md Mehrab Hosen</h4>
-                                    <p class="card-text">Division : Dhaka</p>
-                                    <p class="card-text">District : Dhaka</p>
-                                    <p class="card-text">Contact No: 01521323545</p>
-                                    
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- ./Team member -->
-            <!-- Team member -->
-            <div class="col-xs-12 col-sm-6 col-md-4">
-                <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
-                    <div class="mainflip">
-                        <div class="frontside">
-                            <div class="card">
-                                <div class="card-body text-center">
-                                    <p><img class=" img-fluid" src="2.jpg" alt="card image"></p>
-                                    <h4 class="card-title">Mahbubur Rahman</h4>
-                                    <p class="card-text">Ambulance service</p>
-                                    <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="backside">
-                            <div class="card">
-                                <div class="card-body text-center mt-4">
-                                    <h4 class="card-title">Mahbubur Rahman</h4>
-                                    <p class="card-text">Division : Dhaka</p>
-                                    <p class="card-text">District : Dhaka</p>
-                                    <p class="card-text">Contact No: 01521323545</p>
-                                    
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- ./Team member -->
-            <!-- Team member -->
-            <div class="col-xs-12 col-sm-6 col-md-4">
-                <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
-                    <div class="mainflip">
-                        <div class="frontside">
-                            <div class="card">
-                                <div class="card-body text-center">
-                                    <p><img class=" img-fluid" src="3.jpg" alt="card image"></p>
-                                    <h4 class="card-title">Sadman Ahmed</h4>
-                                    <p class="card-text">Ambulance Service</p>
-                                    <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="backside">
-                            <div class="card">
-                                <div class="card-body text-center mt-4">
-                                    <h4 class="card-title">Sadman Ahmed</h4>
-                                    <p class="card-text">Division : Bandarban</p>
-                                    <p class="card-text">District : Chattogram</p>
-                                    <p class="card-text">Contact No: 01521323545</p>
-                                    
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- ./Team member -->
-             <!-- Team member -->
-            <div class="col-xs-12 col-sm-6 col-md-4">
-                <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
-                    <div class="mainflip">
-                        <div class="frontside">
-                            <div class="card">
-                                <div class="card-body text-center">
-                                    <p><img class=" img-fluid" src="1.jpg" alt="card image"></p>
-                                    <h4 class="card-title">Md Mehrab Hosen</h4>
-                                    <p class="card-text">Ambulance service</p>
-                                    <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="backside">
-                            <div class="card">
-                                <div class="card-body text-center mt-4">
-                                    <h4 class="card-title">Md Mehrab Hosen</h4>
-                                    <p class="card-text">Division : Dhaka</p>
-                                    <p class="card-text">District : Dhaka</p>
-                                    <p class="card-text">Contact No: 01521323545</p>
-                                    
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- ./Team member -->
-            <!-- Team member -->
-            <div class="col-xs-12 col-sm-6 col-md-4">
-                <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
-                    <div class="mainflip">
-                        <div class="frontside">
-                            <div class="card">
-                                <div class="card-body text-center">
-                                    <p><img class=" img-fluid" src="2.jpg" alt="card image"></p>
-                                    <h4 class="card-title">Mahbubur Rahman</h4>
-                                    <p class="card-text">Ambulance service</p>
-                                    <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="backside">
-                            <div class="card">
-                                <div class="card-body text-center mt-4">
-                                    <h4 class="card-title">Mahbubur Rahman</h4>
-                                    <p class="card-text">Division : Dhaka</p>
-                                    <p class="card-text">District : Dhaka</p>
-                                    <p class="card-text">Contact No: 01521323545</p>
-                                    
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- ./Team member -->
-            <!-- Team member -->
-            <div class="col-xs-12 col-sm-6 col-md-4">
-                <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
-                    <div class="mainflip">
-                        <div class="frontside">
-                            <div class="card">
-                                <div class="card-body text-center">
-                                    <p><img class=" img-fluid" src="3.jpg" alt="card image"></p>
-                                    <h4 class="card-title">Sadman Ahmed</h4>
-                                    <p class="card-text">Ambulance Service</p>
-                                    <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="backside">
-                            <div class="card">
-                                <div class="card-body text-center mt-4">
-                                    <h4 class="card-title">Sadman Ahmed</h4>
-                                    <p class="card-text">Division : Bandarban</p>
-                                    <p class="card-text">District : Chattogram</p>
-                                    <p class="card-text">Contact No: 01521323545</p>
-                                    
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- ./Team member -->
-            
-
-        </div>
 
 
 
 
 
-         <div class="row" style="padding-top: 10px; padding-bottom: 30px;">
- 
-
-        <div class="col-md-4">
-            
-        </div>
-
-        <div class="col-md-4">
-
-
-                <div class="row">
-
-                    <div class="col-md-4">
-                        
-                    </div>
-
-                    <div class="col-md-4">
-                        <button type="button" class="btn btn-success">View More</button>
-
-                    </div>
-
-                    <div class="col-md-4">
-                        
-                    </div>
-                    
-                </div>
-             
-
-            
-        </div>
-
-        <div class="col-md-4">
-            
-        </div>
 
 
         </div>
+    </section>
 
 
 
-
-
-
-
-    </div>
-</section>
-    
-
-
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="ambulance.js"></script>
 
 
 

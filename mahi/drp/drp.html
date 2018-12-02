@@ -1,13 +1,15 @@
 <!doctype html>
-<html >
-  <head>
+<html>
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
     <link type="text/css" href="custom.css" rel="stylesheet">
     <link type="text/css" href="drp.css" rel="stylesheet">
-    
+
 
     <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
@@ -16,11 +18,11 @@
     <link rel="icon" href="icon.png">
 
 
-
+    <script src="https://www.gstatic.com/firebasejs/5.6.0/firebase.js"></script>
     <!-- For Animation -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
 
-  </head>
+</head>
 
 
 
@@ -29,528 +31,211 @@
 <body>
 
 
-  <!-- The Modal -->
-  <div class="modal fade" id="doctor">
-    <div class="modal-dialog">
-      <div class="modal-content">
-      
-        <!-- Modal Header -->
-        
-        
-        <!-- Modal body -->
-          <div class="modal-body">
-              <h1 class="text-intro">If you are an user then you can log in here.</h1>
-          <div class="form-div">
-              <form action="/action_page.php">
-              <div class="form-group">
-                <input type="email" class="form-control" id="email" placeholder="Phone Number">
-              </div>
-              <div class="form-group">
-    
-                <input type="password" class="form-control" id="pwd" placeholder="Password">
-              </div>
-              <div class="form-check">
-                <label class="form-check-label">
-                    <input class="form-check-input" type="checkbox"> Remember me
-                </label>
-              </div>
-              <button type="submit" class="btn btn-warning btn-block mybtn">Submit</button>
-              <center><a href="#" title="Reset Password"><small>Forgot Password ?</small></a></center>
-              <center> Not registered!!? sign up now!</center>
-          </form>
-          <form action="usu/usu.html">
-              <button type="submit" class="btn btn-dark btn-block mybtn">Sign Up</button>
-          </form>
-          </div>
-          </div>
-        
-       
+    <!-- The Modal -->
+    <div class="modal fade" id="doctor">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <h1 class="text-intro">If you are an user then you can log in here.</h1>
+                    <div class="form-div">
+                        <form action="/action_page.php">
+                            <div class="form-group">
+                                <input type="email" class="form-control" id="email" placeholder="Phone Number">
+                            </div>
+                            <div class="form-group">
+
+                                <input type="password" class="form-control" id="pwd" placeholder="Password">
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input class="form-check-input" type="checkbox"> Remember me
+                                </label>
+                            </div>
+                            <button type="submit" class="btn btn-warning btn-block mybtn">Submit</button>
+                            <center><a href="#" title="Reset Password"><small>Forgot Password ?</small></a></center>
+                            <center> Not registered!!? sign up now!</center>
+                        </form>
+                        <form action="usu/usu.html">
+                            <button type="submit" class="btn btn-dark btn-block mybtn">Sign Up</button>
+                        </form>
+                    </div>
+                </div>
+
+
+            </div>
         </div>
     </div>
-  </div>
 
 
 
 
 
-  <div class="modal fade" id="user">
-    <div class="modal-dialog">
-      <div class="modal-content">
-      
-        <!-- Modal Header -->
-        
-        
-        <!-- Modal body -->
-          <div class="modal-body">
-          <h1 class="text-intro">If you are an user then you can log in here.</h1>
-          <div class="form-div">
-              <form action="/action_page.php">
-              <div class="form-group">
-                <input type="email" class="form-control" id="email" placeholder="Phone Number">
-              </div>
-              <div class="form-group">
-    
-                <input type="password" class="form-control" id="pwd" placeholder="Password">
-              </div>
-              <div class="form-check">
-                <label class="form-check-label">
-                    <input class="form-check-input" type="checkbox"> Remember me
-                </label>
-              </div>
-              <button type="submit" class="btn btn-warning btn-block mybtn">Submit</button>
-              <center><a href="#" title="Reset Password"><small>Forgot Password ?</small></a></center>
-              <center> Not registered!!? sign up now!</center>
-          </form>
-          <form action="usu/usu.html">
-              <button type="submit" class="btn btn-dark btn-block mybtn">Sign Up</button>
-          </form>
-          </div>
-          </div>
-        
-       
+    <div class="modal fade" id="user">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <h1 class="text-intro">If you are an user then you can log in here.</h1>
+                    <div class="form-div">
+                        <form action="/action_page.php">
+                            <div class="form-group">
+                                <input type="email" class="form-control" id="email" placeholder="Phone Number">
+                            </div>
+                            <div class="form-group">
+
+                                <input type="password" class="form-control" id="pwd" placeholder="Password">
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input class="form-check-input" type="checkbox"> Remember me
+                                </label>
+                            </div>
+                            <button type="submit" class="btn btn-warning btn-block mybtn">Submit</button>
+                            <center><a href="#" title="Reset Password"><small>Forgot Password ?</small></a></center>
+                            <center> Not registered!!? sign up now!</center>
+                        </form>
+                        <form action="usu/usu.html">
+                            <button type="submit" class="btn btn-dark btn-block mybtn">Sign Up</button>
+                        </form>
+                    </div>
+                </div>
+
+
+            </div>
         </div>
     </div>
-  </div>
 
 
 
 
-        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" >
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
 
 
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
+            aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
 
-      <a class="navbar-brand" href="file:///C:/Users/User/Desktop/web/web.html"><img src="logo.png" style="height:30px; "></a>
+        <a class="navbar-brand" href="file:///C:/Users/User/Desktop/web/web.html"><img src="logo.png" style="height:30px; "></a>
 
-      <div class="collapse navbar-collapse" id="navbarTogglerDemo03" >
-      <div class="navbar-nav mr-auto mt-2 mt-lg-0">
-      
-      </div>
-      <div class="form-inline my-2 my-lg-0">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit"  data-toggle="modal" data-target="#doctor">Doctor's Sign in/up</button>
-        &nbsp&nbsp&nbsp&nbsp
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit"  data-toggle="modal" data-target="#user">User's Sign in/up</button>
-      </div>
-      </div>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+            <div class="navbar-nav mr-auto mt-2 mt-lg-0">
+
+            </div>
+            <div class="form-inline my-2 my-lg-0">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit" data-toggle="modal" data-target="#doctor">Doctor's
+                    Sign in/up</button>
+                &nbsp&nbsp&nbsp&nbsp
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit" data-toggle="modal" data-target="#user">User's
+                    Sign in/up</button>
+            </div>
+        </div>
     </nav>
-<br><br><br>
+    <br><br><br>
 
     <div class="container">
 
         <div class="row">
 
             <div class="col-md-4">
-                    
-                    <select class="form-control input-sm specialty" name="specialty">
-                      <option value="0">All specialist</option>
-                      <option value="1">Allergy &amp; Immunology</option>
-                      <option value="2">Anesthesia</option>
-                      <option value="3">Cardiology (Heart, Cardiac Surgery, Hypertension, Blood Pressure)</option>
-                      <option value="40">Colorectal Surgery (Surgery of Anal Canal, Rectum, etc.)</option>
-                      <option value="44">Dentistry (Dental, Orthodontics, Maxillofacial Surgery, Scaling)</option>
-                      <option value="4">Dermatology (Skin, Venereology, Sexual, Hair, Allergy)</option>
-                      <option value="6">Endocrinology (Diabetes, Hormones, Thyroid, etc.)</option>
-                      <option value="23">ENT (Ear, Nose &amp; Throat, Otorhinolaryngology)</option>
-                      <option value="8">Gastroenterology (Stomach, Pancreas and Intestine)</option>
-                      <option value="9">General Physician (All or any common diseases and health issues)</option>
-                      <option value="37">General Surgery (Incision, Operation)</option>
-                      <option value="11">Gynaecologic Oncology (Cancer of Female Reproductive System)</option>
-                      <option value="48">Gynaecology and Obstetrics (Pregnancy, Menstrual, Uterus, Female)</option>
-                      <option value="12">Haematology (Blood related diseases)</option>
-                      <option value="58">Hepato-Biliary- Pancreatic Surgery</option>
-                      <option value="50">Hepatology (Liver, Gallbladder, Biliary system)</option>
-                      <option value="13">Infectious Diseases</option>
-                      <option value="45">Infertility</option>
-                      <option value="14">Medicine (All Diseases of Adults)</option>
-                      <option value="15">Neonatology (New Born Issues)</option>
-                      <option value="16">Nephrology (Kidney, Ureter, Urinary Bladder)</option>
-                      <option value="17">Neuromedicine (Brain, Spinal Cord, Nerve)</option>
-                      <option value="49">Neurosurgery (Surgery of Brain, Spinal Cord and Nerve)</option>
-                      <option value="32">Nutritionist (Food, Diet, Weight Management)</option>
-                      <option value="20">Oncology (Cancer)</option>
-                      <option value="21">Ophthalmology (Eye, Vision, Cataracts, etc.)</option>
-                      <option value="22">Orthopaedics (Bone, Joint, Fractures)</option>
-                      <option value="18">Other Speciality (not mentioned in the list)</option>
-                      <option value="47">Paediatric Surgery (Surgery for Children)</option>
-                      <option value="25">Paediatrics (Child or Infant any disease)</option>
-                      <option value="55">Pain Management</option>
-                      <option value="26">Physical Medicine (Paralysis, Pain Management)</option>
-                      <option value="54">Physiotherapy</option>
-                      <option value="27">Plastic Surgery, Reconstruction or Cosmetic Surgery</option>
-                      <option value="30">Psychiatry (Mental Health, Drug Abuse, Depression, etc.)</option>
-                      <option value="31">Respiratory Medicine (Pulmonary, Lung Diseases, Bronchitis etc.)</option>
-                      <option value="35">Rheumatology (Arthritis, Joint, Soft Tissue problems)</option>
-                      <option value="46">Sex Specialist(Venereology)</option>
-                      <option value="56">Speech and Language Therapy</option>
-                      <option value="38">Thoracic Surgery (Surgery in Chest, Lung, etc.)</option>
-                      <option value="42">Urology (Surgery for Kidney, Ureter or Urinary Bladder)</option>
-                      <option value="39">Vascular Surgery (e.g. Surgery of Blood Vessels)</option>
-                    </select>
+
+                <select class="form-control input-sm specialty" name="specialty">
+                    <option value="0">All specialist</option>
+                    <option value="1">Allergy &amp; Immunology</option>
+                    <option value="2">Anesthesia</option>
+                    <option value="3">Cardiology (Heart, Cardiac Surgery, Hypertension, Blood Pressure)</option>
+                    <option value="40">Colorectal Surgery (Surgery of Anal Canal, Rectum, etc.)</option>
+                    <option value="44">Dentistry (Dental, Orthodontics, Maxillofacial Surgery, Scaling)</option>
+                    <option value="4">Dermatology (Skin, Venereology, Sexual, Hair, Allergy)</option>
+                    <option value="6">Endocrinology (Diabetes, Hormones, Thyroid, etc.)</option>
+                    <option value="23">ENT (Ear, Nose &amp; Throat, Otorhinolaryngology)</option>
+                    <option value="8">Gastroenterology (Stomach, Pancreas and Intestine)</option>
+                    <option value="9">General Physician (All or any common diseases and health issues)</option>
+                    <option value="37">General Surgery (Incision, Operation)</option>
+                    <option value="11">Gynaecologic Oncology (Cancer of Female Reproductive System)</option>
+                    <option value="48">Gynaecology and Obstetrics (Pregnancy, Menstrual, Uterus, Female)</option>
+                    <option value="12">Haematology (Blood related diseases)</option>
+                    <option value="58">Hepato-Biliary- Pancreatic Surgery</option>
+                    <option value="50">Hepatology (Liver, Gallbladder, Biliary system)</option>
+                    <option value="13">Infectious Diseases</option>
+                    <option value="45">Infertility</option>
+                    <option value="14">Medicine (All Diseases of Adults)</option>
+                    <option value="15">Neonatology (New Born Issues)</option>
+                    <option value="16">Nephrology (Kidney, Ureter, Urinary Bladder)</option>
+                    <option value="17">Neuromedicine (Brain, Spinal Cord, Nerve)</option>
+                    <option value="49">Neurosurgery (Surgery of Brain, Spinal Cord and Nerve)</option>
+                    <option value="32">Nutritionist (Food, Diet, Weight Management)</option>
+                    <option value="20">Oncology (Cancer)</option>
+                    <option value="21">Ophthalmology (Eye, Vision, Cataracts, etc.)</option>
+                    <option value="22">Orthopaedics (Bone, Joint, Fractures)</option>
+                    <option value="18">Other Speciality (not mentioned in the list)</option>
+                    <option value="47">Paediatric Surgery (Surgery for Children)</option>
+                    <option value="25">Paediatrics (Child or Infant any disease)</option>
+                    <option value="55">Pain Management</option>
+                    <option value="26">Physical Medicine (Paralysis, Pain Management)</option>
+                    <option value="54">Physiotherapy</option>
+                    <option value="27">Plastic Surgery, Reconstruction or Cosmetic Surgery</option>
+                    <option value="30">Psychiatry (Mental Health, Drug Abuse, Depression, etc.)</option>
+                    <option value="31">Respiratory Medicine (Pulmonary, Lung Diseases, Bronchitis etc.)</option>
+                    <option value="35">Rheumatology (Arthritis, Joint, Soft Tissue problems)</option>
+                    <option value="46">Sex Specialist(Venereology)</option>
+                    <option value="56">Speech and Language Therapy</option>
+                    <option value="38">Thoracic Surgery (Surgery in Chest, Lung, etc.)</option>
+                    <option value="42">Urology (Surgery for Kidney, Ureter or Urinary Bladder)</option>
+                    <option value="39">Vascular Surgery (e.g. Surgery of Blood Vessels)</option>
+                </select>
 
             </div>
 
             <div class="col-md-4">
 
                 <select class="form-control input-sm specialty" name="specialty">
-                      <option value="0">All District</option>
-                      <option value="1">Dhaka</option>
-                      <option value="2">Chandpur</option>
-                      <option value="3">Gaibandha</option>
-                      <option value="4">Pirozpur</option>
-                      <option value="5">Razbari</option>
-                      <option value="6">Shariatpur</option>
-                      <option value="7">Munshiganj</option>
-                      <option value="8">Narayanganj</option>
-                      
-                    </select>
-                
+                    <option value="0">All District</option>
+                    <option value="1">Dhaka</option>
+                    <option value="2">Chandpur</option>
+                    <option value="3">Gaibandha</option>
+                    <option value="4">Pirozpur</option>
+                    <option value="5">Razbari</option>
+                    <option value="6">Shariatpur</option>
+                    <option value="7">Munshiganj</option>
+                    <option value="8">Narayanganj</option>
+
+                </select>
+
             </div>
 
             <div class="col-md-4">
 
                 <button type="button" class="btn btn-sm btn-outline-dark" style="margin-top: 5px;width: 80px;">GO!!</button>
-                
+
             </div>
-            
+
         </div>
-        
+
     </div>
 
 
 
-    <div class="container" style="padding-top: 40px;">
-        
-        <div class="row">
+    <div class="container" id='mydiv' style="padding-top: 40px;">
 
-            <div class="col-md-2" style="padding-top: 15px;">
 
-                <img class="img-circle search_page_doctor_image pull-right" src="logo.png" alt="profile pic">
-                
-            </div>
 
-            <div class="col-md-4" style="padding-left: 50px;">
 
-                <p class="des">Dr. Mahfuzul Alam </p>
-                <p class="des">MBBS(DHAKA),MS(CTS)</p>
-                <p class="des">Consultant, Dept. Of Cardiac Surgery, Bangladesh Specialized Hospital</p>
-                
-            </div>
 
-            <div class="col-md-4">
-                <i class="fa fa-map-marker" aria-hidden="true"></i> &nbsp &nbsp Service
 
-                <p>
-                    Bangladesh Specialized Hospital Ltd., Main Br., Shyamoli, Dhaka
-                </p>
 
-                <i class="fa fa-money" aria-hidden="true"></i> &nbsp &nbsp fees :  500 tk
-            </div>
 
-            <div class="col-md-2" style="padding-top:  30px;">
-                <a target="_blank" href="#" class="btn btn-success btn-sm hidden-xs"><i class="fa fa-user-md" aria-hidden="true"></i> View Profile</a>
-            </div>
-            
-        </div>
 
-        <hr>
-
-
-         <div class="row">
-
-            <div class="col-md-2" style="padding-top: 15px;">
-
-                <img class="img-circle search_page_doctor_image pull-right" src="logo.png" alt="profile pic">
-                
-            </div>
-
-            <div class="col-md-4" style="padding-left: 50px;">
-
-                <p class="des">Dr. Mahfuzul Alam </p>
-                <p class="des">MBBS(DHAKA),MS(CTS)</p>
-                <p class="des">Consultant, Dept. Of Cardiac Surgery, Bangladesh Specialized Hospital</p>
-                
-            </div>
-
-            <div class="col-md-4">
-                <i class="fa fa-map-marker" aria-hidden="true"></i> &nbsp &nbsp Service
-
-                <p>
-                    Bangladesh Specialized Hospital Ltd., Main Br., Shyamoli, Dhaka
-                </p>
-
-                <i class="fa fa-money" aria-hidden="true"></i> &nbsp &nbsp fees :  500 tk
-            </div>
-
-            <div class="col-md-2" style="padding-top:  30px;">
-                <a target="_blank" href="#" class="btn btn-success btn-sm hidden-xs"><i class="fa fa-user-md" aria-hidden="true"></i> View Profile</a>
-            </div>
-            
-        </div>
-
-        <hr>
-
-
-
-
-         <div class="row">
-
-            <div class="col-md-2" style="padding-top: 15px;">
-
-                <img class="img-circle search_page_doctor_image pull-right" src="logo.png" alt="profile pic">
-                
-            </div>
-
-            <div class="col-md-4" style="padding-left: 50px;">
-
-                <p class="des">Dr. Mahfuzul Alam </p>
-                <p class="des">MBBS(DHAKA),MS(CTS)</p>
-                <p class="des">Consultant, Dept. Of Cardiac Surgery, Bangladesh Specialized Hospital</p>
-                
-            </div>
-
-            <div class="col-md-4">
-                <i class="fa fa-map-marker" aria-hidden="true"></i> &nbsp &nbsp Service
-
-                <p>
-                    Bangladesh Specialized Hospital Ltd., Main Br., Shyamoli, Dhaka
-                </p>
-
-                <i class="fa fa-money" aria-hidden="true"></i> &nbsp &nbsp fees :  500 tk
-            </div>
-
-            <div class="col-md-2" style="padding-top:  30px;">
-                <a target="_blank" href="#" class="btn btn-success btn-sm hidden-xs"><i class="fa fa-user-md" aria-hidden="true"></i> View Profile</a>
-            </div>
-            
-        </div>
-
-        <hr>
-
-
-
-
-         <div class="row">
-
-            <div class="col-md-2" style="padding-top: 15px;">
-
-                <img class="img-circle search_page_doctor_image pull-right" src="logo.png" alt="profile pic">
-                
-            </div>
-
-            <div class="col-md-4" style="padding-left: 50px;">
-
-                <p class="des">Dr. Mahfuzul Alam </p>
-                <p class="des">MBBS(DHAKA),MS(CTS)</p>
-                <p class="des">Consultant, Dept. Of Cardiac Surgery, Bangladesh Specialized Hospital</p>
-                
-            </div>
-
-            <div class="col-md-4">
-                <i class="fa fa-map-marker" aria-hidden="true"></i> &nbsp &nbsp Service
-
-                <p>
-                    Bangladesh Specialized Hospital Ltd., Main Br., Shyamoli, Dhaka
-                </p>
-
-                <i class="fa fa-money" aria-hidden="true"></i> &nbsp &nbsp fees :  500 tk
-            </div>
-
-            <div class="col-md-2" style="padding-top:  30px;">
-                <a target="_blank" href="#" class="btn btn-success btn-sm hidden-xs"><i class="fa fa-user-md" aria-hidden="true"></i> View Profile</a>
-            </div>
-            
-        </div>
-
-        <hr>
-
-
-
-         <div class="row">
-
-            <div class="col-md-2" style="padding-top: 15px;">
-
-                <img class="img-circle search_page_doctor_image pull-right" src="logo.png" alt="profile pic">
-                
-            </div>
-
-            <div class="col-md-4" style="padding-left: 50px;">
-
-                <p class="des">Dr. Mahfuzul Alam </p>
-                <p class="des">MBBS(DHAKA),MS(CTS)</p>
-                <p class="des">Consultant, Dept. Of Cardiac Surgery, Bangladesh Specialized Hospital</p>
-                
-            </div>
-
-            <div class="col-md-4">
-                <i class="fa fa-map-marker" aria-hidden="true"></i> &nbsp &nbsp Service
-
-                <p>
-                    Bangladesh Specialized Hospital Ltd., Main Br., Shyamoli, Dhaka
-                </p>
-
-                <i class="fa fa-money" aria-hidden="true"></i> &nbsp &nbsp fees :  500 tk
-            </div>
-
-            <div class="col-md-2" style="padding-top:  30px;">
-                <a target="_blank" href="#" class="btn btn-success btn-sm hidden-xs"><i class="fa fa-user-md" aria-hidden="true"></i> View Profile</a>
-            </div>
-            
-        </div>
-
-        <hr>
-
-
-
-        <div class="row">
-
-            <div class="col-md-2" style="padding-top: 15px;">
-
-                <img class="img-circle search_page_doctor_image pull-right" src="logo.png" alt="profile pic">
-                
-            </div>
-
-            <div class="col-md-4" style="padding-left: 50px;">
-
-                <p class="des">Dr. Mahfuzul Alam </p>
-                <p class="des">MBBS(DHAKA),MS(CTS)</p>
-                <p class="des">Consultant, Dept. Of Cardiac Surgery, Bangladesh Specialized Hospital</p>
-                
-            </div>
-
-            <div class="col-md-4">
-                <i class="fa fa-map-marker" aria-hidden="true"></i> &nbsp &nbsp Service
-
-                <p>
-                    Bangladesh Specialized Hospital Ltd., Main Br., Shyamoli, Dhaka
-                </p>
-
-                <i class="fa fa-money" aria-hidden="true"></i> &nbsp &nbsp fees :  500 tk
-            </div>
-
-            <div class="col-md-2" style="padding-top:  30px;">
-                <a target="_blank" href="#" class="btn btn-success btn-sm hidden-xs"><i class="fa fa-user-md" aria-hidden="true"></i> View Profile</a>
-            </div>
-            
-        </div>
-
-        <hr>
-
-
-
-
-
-
-        <div class="row">
-
-            <div class="col-md-2" style="padding-top: 15px;">
-
-                <img class="img-circle search_page_doctor_image pull-right" src="logo.png" alt="profile pic">
-                
-            </div>
-
-            <div class="col-md-4" style="padding-left: 50px;">
-
-                <p class="des">Dr. Mahfuzul Alam </p>
-                <p class="des">MBBS(DHAKA),MS(CTS)</p>
-                <p class="des">Consultant, Dept. Of Cardiac Surgery, Bangladesh Specialized Hospital</p>
-                
-            </div>
-
-            <div class="col-md-4">
-                <i class="fa fa-map-marker" aria-hidden="true"></i> &nbsp &nbsp Service
-
-                <p>
-                    Bangladesh Specialized Hospital Ltd., Main Br., Shyamoli, Dhaka
-                </p>
-
-                <i class="fa fa-money" aria-hidden="true"></i> &nbsp &nbsp fees :  500 tk
-            </div>
-
-            <div class="col-md-2" style="padding-top:  30px;">
-                <a target="_blank" href="#" class="btn btn-success btn-sm hidden-xs"><i class="fa fa-user-md" aria-hidden="true"></i> View Profile</a>
-            </div>
-            
-        </div>
-
-        <hr>
-
-
-
-
-
-        <div class="row">
-
-            <div class="col-md-2" style="padding-top: 15px;">
-
-                <img class="img-circle search_page_doctor_image pull-right" src="logo.png" alt="profile pic">
-                
-            </div>
-
-            <div class="col-md-4" style="padding-left: 50px;">
-
-                <p class="des">Dr. Mahfuzul Alam </p>
-                <p class="des">MBBS(DHAKA),MS(CTS)</p>
-                <p class="des">Consultant, Dept. Of Cardiac Surgery, Bangladesh Specialized Hospital</p>
-                
-            </div>
-
-            <div class="col-md-4">
-                <i class="fa fa-map-marker" aria-hidden="true"></i> &nbsp &nbsp Service
-
-                <p>
-                    Bangladesh Specialized Hospital Ltd., Main Br., Shyamoli, Dhaka
-                </p>
-
-                <i class="fa fa-money" aria-hidden="true"></i> &nbsp &nbsp fees :  500 tk
-            </div>
-
-            <div class="col-md-2" style="padding-top:  30px;">
-                <a target="_blank" href="#" class="btn btn-success btn-sm hidden-xs"><i class="fa fa-user-md" aria-hidden="true"></i> View Profile</a>
-            </div>
-            
-        </div>
-
-        <hr>
-
-
-
-
-        <div class="row">
-
-            <div class="col-md-2" style="padding-top: 15px;">
-
-                <img class="img-circle search_page_doctor_image pull-right" src="logo.png" alt="profile pic">
-                
-            </div>
-
-            <div class="col-md-4" style="padding-left: 50px;">
-
-                <p class="des">Dr. Mahfuzul Alam </p>
-                <p class="des">MBBS(DHAKA),MS(CTS)</p>
-                <p class="des">Consultant, Dept. Of Cardiac Surgery, Bangladesh Specialized Hospital</p>
-                
-            </div>
-
-            <div class="col-md-4">
-                <i class="fa fa-map-marker" aria-hidden="true"></i> &nbsp &nbsp Service
-
-                <p>
-                    Bangladesh Specialized Hospital Ltd., Main Br., Shyamoli, Dhaka
-                </p>
-
-                <i class="fa fa-money" aria-hidden="true"></i> &nbsp &nbsp fees :  500 tk
-            </div>
-
-            <div class="col-md-2" style="padding-top:  30px;">
-                <a target="_blank" href="#" class="btn btn-success btn-sm hidden-xs"><i class="fa fa-user-md" aria-hidden="true"></i> View Profile</a>
-            </div>
-            
-        </div>
-
-        <hr>
 
 
 
@@ -561,43 +246,7 @@
         <!--  View More Button  -->
 
 
-        <div class="row" style="padding-top: 10px; padding-bottom: 30px;">
- 
 
-        <div class="col-md-4">
-            
-        </div>
-
-        <div class="col-md-4">
-
-
-                <div class="row">
-
-                    <div class="col-md-4">
-                        
-                    </div>
-
-                    <div class="col-md-4">
-                        <button type="button" class="btn btn-success">View More</button>
-
-                    </div>
-
-                    <div class="col-md-4">
-                        
-                    </div>
-                    
-                </div>
-             
-
-            
-        </div>
-
-        <div class="col-md-4">
-            
-        </div>
-
-
-        </div>
 
 
 
@@ -607,14 +256,55 @@
 
     </div>
 
+    <div class="row" style="padding-top: 10px; padding-bottom: 30px;">
+
+
+        <div class="col-md-4">
+
+        </div>
+
+        <div class="col-md-4">
+
+
+            <div class="row">
+
+                <div class="col-md-4">
+
+                </div>
+
+                <div class="col-md-4">
+                    <button type="button" class="btn btn-success">View More</button>
+
+                </div>
+
+                <div class="col-md-4">
+
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+        <div class="col-md-4">
+
+        </div>
+
+
+    </div>
 
 
 
 
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="drp.js"></script>
 
 
 </body>
